@@ -1,0 +1,267 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+header {
+    background-color:#EAC926;
+    width: 100%;
+}
+.contenedor-logo-busqueda{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Logo{
+    padding: 10px;
+    flex-grow: 0.5;
+   
+}
+.caja-busqueda{
+    width: 50%;
+    flex-grow: 0.5;
+}
+.busquedat{
+    border:none;
+    border-radius: 5px;
+    padding: 8px;
+}
+.compra1 {
+    text-align: center;
+    font-size: 12px;
+}
+nav{
+    font-size: 12px;
+    display:none;
+    
+}
+header ul li{
+    list-style-type: none;
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+header ul{
+    padding-inline-start:0px
+}
+.burger-menu {
+    text-align: center;
+}
+.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px; 
+}
+.burger-menu a{
+    text-decoration: none;
+    color: white;
+}
+.banner{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.main-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.titulares {
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+}
+
+article{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+.subarticulo{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    /*display: flex;*/
+    position: relative;
+}
+.preciosydescuentos{
+    display: flex;
+}
+.precios {
+    font-size: 18px;
+    margin:0%;
+    flex-grow:0.30;
+}
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    margin:0%;
+    flex-grow:0.70;
+}
+.descripcion {
+    font-size: 16px;
+    color: #A3A3A3;
+    display: none;
+}
+main section article:hover .descripcion{
+    display:block;
+}
+.marcotruck{
+    width: 40px;
+    height: 40px;
+    border:solid 1px #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top:-15px;
+    font-size: 20px;
+    background-color: white;
+}
+.fa-truck{
+    color: #39b54a;
+    padding: 8px;
+    transition: transform 1.5s;
+ }
+ .fa-truck:hover{
+     transform: rotate(-90deg);
+ }
+
+h2{
+    padding: 15px;
+}
+
+.cajas-footer{
+    text-align: center;
+    
+    
+}
+.logosfooter{
+    color: #0e62bd;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.titulosfooter{
+    font-size: 20px;
+}
+footer section {
+    padding: 10%;
+}
+.copyright{
+    text-align: left;
+    font-size: 14px;
+    padding: 2px;
+}
+
+@media (min-width: 361px){
+    .descripcion{
+        display: block;
+    }
+    article{
+        
+        box-shadow: 0px 0px 10px 0px #646464;
+        max-width: 280px;
+    }
+    nav{
+        padding: 15px;
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .listas{
+        display: flex;
+        justify-content: space-between;
+    }
+    .listas li{
+        padding: 0 5px;
+    }
+    .compra1{
+        font-size: 14px;
+    }
+    .control-formulario{
+        text-align: center;
+    }
+
+}
+@media (min-width: 769px){
+    .div-footer{
+        display: flex;
+    }
+    
+    footer section {
+        padding: 1%;
+    }
+    .logosfooter:hover{
+        color: #39b54a;
+    }   
+}
+
+
+/*--------------------register---------------------*/
+
+.create-user{
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    align-items: flex-start;
+    padding: 10px;
+    
+}
+.control-formulario{
+    width: 100%;
+    margin:5px;
+    
+    
+}
+.control{
+    padding: 0%;
+    width: 100%;
+    border-radius: 5px;
+    border:white;
+    height: 28px;
+    max-width: 400px;
+}
+.boton-formulario {
+    background-color: #0044AA;
+    border:none;
+    font-size: 15px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.boton-formulario:hover{
+    background-color: #0022AA;
+}
+.perfil{
+    text-align: left;
+    
+}
+
+/*--------------------login---------------------*/
+.form-login{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
